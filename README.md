@@ -1,6 +1,6 @@
 The goal is to create a python package one step at a time. I will do it around a simple function I use for determining the convergence rate of a numerical algorithm.
 
-###Commit 1
+### Commit 1
 ---
 Create a simple program structure [[1]].
 
@@ -13,7 +13,7 @@ Create a simple program structure [[1]].
 
 I included empty files in each folder so they would show up in the initial commit. I chose the name test_calc.py for the test file because I plan to use pytest and I'm fairly sure that's the naming convention for test in that framework.
 
-###Commit 2
+### Commit 2
 ---
 Next we will add a gitignore file and we will create a virtual environment for our project.
 
@@ -25,7 +25,7 @@ Next we will add a gitignore file and we will create a virtual environment for o
     |----environment.yml
     └----README.md
 
-I used these two article [[1]], [[3]] for guidance. After downloading and installing everything I ran:
+I used these two article [[2]], [[3]] for guidance. After downloading and installing everything I ran:
 
     conda create --conv-rate-env python=3.7
 
