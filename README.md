@@ -114,6 +114,23 @@ TravisCI [[2a]].
 To create this file I ran the command `pip freeze > requirements.txt` from
 inside the virtual env.
 
+## Step 3.b
+Created a release branch and added some version info to setup.py and a license
+file.
+
+    conv-rate-package
+    |----/convrate
+    |       __init__.py
+    |       calc.py
+    |----/tests
+    |       test_calc.py
+    |----environment.yml
+    |----LICENSE  
+    |----README.md
+    |----requirements.txt
+    └----setup.py
+
+
 [0]: https://nvie.com/posts/a-successful-git-branching-model/
 [1]: https://docs.python-guide.org/writing/structure/
 [2]: https://towardsdatascience.com/getting-started-with-python-environments-using-conda-32e9f2779307
