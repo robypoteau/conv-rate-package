@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/robypoteau/conv-rate-package.svg?branch=master)](https://travis-ci.org/robypoteau/conv-rate-package)
+
 The goal is to create a python package one step at a time. I will do it around a simple function I use for determining the convergence rate of a numerical algorithm. In addition I will try to follow the Git workflow as described in [[0]].
 
 ### Step 1
