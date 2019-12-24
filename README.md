@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/robypoteau/conv-rate-package.svg?branch=master)](https://travis-ci.org/robypoteau/conv-rate-package)
+
 The goal is to create a python package one step at a time. I will do it around a simple function I use for determining the convergence rate of a numerical algorithm. In addition I will try to follow the Git workflow as described in [[0]].
 
 ### Step 1
@@ -14,17 +16,6 @@ Create a simple program structure [[1]].
 I included empty files in each folder so they would show up in the initial commit. I chose the name test_calc.py for the test file because I plan to use pytest and I'm fairly sure that's the naming convention for test in that framework.
 
 ### Step 2
----
-Next we will add a gitignore file and we will create a virtual environment for our project.
-
-    conv-rate-package
-    |----/convrate
-    |       calc.py
-    |----/tests
-    |       test_calc.py
-    |----environment.yml
-    └----README.md
-
 I used these two article [[2]], [[3]] for guidance. After downloading and installing everything I ran:
 
     conda create -n conv-rate-env python=3.7
@@ -130,6 +121,21 @@ file.
     |----requirements.txt
     └----setup.py
 
+### Step 4
+    ---
+    Add continuous integration using TravisCI [[5]].
+
+        conv-rate-package
+        |----/convrate
+        |       calc.py
+        |----/tests
+        |       test_calc.py
+        |----environment.yml
+        └----README.md
+        └----.travis.yml
+
+    Add the `.travis.yml` file.
+
 
 [0]: https://nvie.com/posts/a-successful-git-branching-model/
 [1]: https://docs.python-guide.org/writing/structure/
@@ -137,3 +143,4 @@ file.
 [2a]: https://stackoverflow.com/questions/50777849/from-conda-create-requirements-txt-for-pip3
 [3]: https://tdhopper.com/blog/my-python-environment-workflow-with-conda/
 [4]: https://github.com/github/gitignore/blob/master/Python.gitignore
+[5]: https://docs.travis-ci.com/user/tutorial/
