@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.org/robypoteau/conv-rate-package.svg?branch=master)](https://travis-ci.org/robypoteau/conv-rate-package)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
+[![Documentation Status](https://readthedocs.org/projects/conv-rate-package/badge/?version=latest)](https://conv-rate-package.readthedocs.io/en/latest/?badge=latest)
+    
 The goal is to create a python package one step at a time. I will do it around a simple function I use for determining the convergence rate of a numerical algorithm. In addition I will try to follow the Git workflow as described in [[0]].
 
 ### Step 1
