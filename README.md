@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/robypoteau/conv-rate-package.svg?branch=master)](https://travis-ci.org/robypoteau/conv-rate-package)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 The goal is to create a python package one step at a time. I will do it around a simple function I use for determining the convergence rate of a numerical algorithm. In addition I will try to follow the Git workflow as described in [[0]].
 
@@ -122,19 +123,42 @@ file.
     └----setup.py
 
 ### Step 4
-    ---
-    Add continuous integration using TravisCI [[5]].
+---
+Add continuous integration using TravisCI [[5]].
 
-        conv-rate-package
-        |----/convrate
-        |       calc.py
-        |----/tests
-        |       test_calc.py
-        |----environment.yml
-        └----README.md
-        └----.travis.yml
+    conv-rate-package
+    |----/convrate
+    |       calc.py
+    |----/tests
+    |       test_calc.py
+    |----environment.yml
+    └----README.md
+    └----.travis.yml
 
-    Add the `.travis.yml` file.
+Add the `.travis.yml` file.
+
+### Step 5
+---
+Last we'll add some dreaded documentation. This is usually the least fun part of
+any project, at least for me. I will be using Sphinx, it's popular and produces
+clean outputs.  For more info on the napoleon extension look here [[6b]].
+
+    conv-rate-package
+    |----/convrate
+    |       calc.py
+    |----/tests
+    |       test_calc.py
+    |----/tests
+    |       \_static
+    |       \_template
+    |       conf.py
+    |       index.rst
+    |----Makefile
+    |----make.bat
+    |----environment.yml
+    └----README.md
+    └----.travis.yml
+
 
 
 [0]: https://nvie.com/posts/a-successful-git-branching-model/
@@ -144,3 +168,6 @@ file.
 [3]: https://tdhopper.com/blog/my-python-environment-workflow-with-conda/
 [4]: https://github.com/github/gitignore/blob/master/Python.gitignore
 [5]: https://docs.travis-ci.com/user/tutorial/
+[6]: https://www.sphinx-doc.org/en/master/usage/installation.html
+[6a]: https://medium.com/@eikonomega/getting-started-with-sphinx-autodoc-part-1-2cebbbca5365
+[6b]: https://sphinxcontrib-napoleon.readthedocs.io/en/latest/
