@@ -123,3 +123,6 @@ dmypy.json
 .pyre/
 
 /notes
+
+#Apple meta data
+*.DS_Store
