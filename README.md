@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/robypoteau/conv-rate-package.svg?branch=master)](https://travis-ci.org/robypoteau/conv-rate-package)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Documentation Status](https://readthedocs.org/projects/conv-rate-package/badge/?version=latest)](https://conv-rate-package.readthedocs.io/en/latest/?badge=latest)
-    
+
 The goal is to create a python package one step at a time. I will do it around a simple function I use for determining the convergence rate of a numerical algorithm. In addition I will try to follow the Git workflow as described in [[0]].
 
 ### Step 1
@@ -118,22 +118,26 @@ file.
     |----/tests
     |       test_calc.py
     |----environment.yml
+    |----requirements.txt
     |----LICENSE  
     |----README.md
-    |----requirements.txt
     └----setup.py
 
 ### Step 4
 ---
 Add continuous integration using TravisCI [[5]].
 
-    conv-rate-package
+conv-rate-package
     |----/convrate
+    |       __init__.py
     |       calc.py
     |----/tests
     |       test_calc.py
     |----environment.yml
-    └----README.md
+    |----requirements.txt
+    |----LICENSE  
+    |----README.md
+    |----setup.py
     └----.travis.yml
 
 Add the `.travis.yml` file.
@@ -149,17 +153,20 @@ clean outputs.  For more info on the napoleon extension look here [[6b]].
     |       calc.py
     |----/tests
     |       test_calc.py
-    |----/tests
-    |       \_static
-    |       \_template
+    |----/doc
     |       conf.py
     |       index.rst
-    |----Makefile
-    |----make.bat
+    |       Makefile
+    |       make.bat
     |----environment.yml
-    └----README.md
+    |----requirements.txt
+    |----LICENSE  
+    |----README.md
+    |----setup.py
     └----.travis.yml
 
+I also added my documentation badge using readthedocs.com, but I'm skipping
+that for the tutorial.
 
 
 [0]: https://nvie.com/posts/a-successful-git-branching-model/
