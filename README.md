@@ -127,7 +127,7 @@ file.
 ---
 Add continuous integration using TravisCI [[5]].
 
-conv-rate-package
+    conv-rate-package
     |----/convrate
     |       __init__.py
     |       calc.py
