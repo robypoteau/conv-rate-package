@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # convrate documentation build configuration file, created by
-# sphinx-quickstart on Wed Dec 25 00:00:04 2019.
+# sphinx-quickstart on Wed Dec 25 02:39:26 2019.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -33,9 +33,7 @@ sys.path.insert(0, os.path.abspath('..'))
 extensions = ['sphinx.ext.autodoc',
     'sphinx.ext.coverage',
     'sphinx.ext.mathjax',
-    'sphinx.ext.napoleon',
-#    'recommonmark'
-    ]
+    'sphinx.ext.napoleon']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -73,7 +71,7 @@ language = None
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
-exclude_patterns = []
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
@@ -168,3 +166,6 @@ texinfo_documents = [
      author, 'convrate', 'One line description of project.',
      'Miscellaneous'),
 ]
+
+
+
