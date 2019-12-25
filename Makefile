@@ -5,7 +5,7 @@
 SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 SPHINXPROJ    = convrate
-SOURCEDIR     = docs
+SOURCEDIR     = doc
 BUILDDIR      = build
 
 # Put it first so that "make" without argument is like "make help".
